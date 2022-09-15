@@ -1,17 +1,78 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Fira+Mono:400');
 * {
     margin: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
 
+body {
+    background: #1d1d1d;
+    color: #d2d2d2;
+
+}
+
+p {
+    margin: 10px;
+}
+
+.mainContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 1em;
+}
+
+.container {
+    background: #3a3a3a;
+    max-width: 700px;
+    border-radius: 5px;
+
+}
+.banner {
+    background-image: url('/root_folder/assets/624397.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px auto
+;
+}
+.pfp {
+    border-radius: 50%;
+    margin: auto;
+    display: block;
+}
+.infoContainer {
+    text-align: center;
+}
+.name {
+    margin-top: 20px;
+    font-size: 2em;
+    letter-spacing: 0.1em;
+}
+.nameContainer {
+    max-width: 200px;
+    margin: 0 auto;
+}
+.title {
+    margin: 10px;
+}
+.socialMedia a {
+    font-size: 1.5em;
+    text-decoration: none;
+    color: #d2d2d2;
+    background-color: #3a3a3a;
+    padding: 15px 10px 15px 10px;
+}
+
+.about {
+    margin-top: 50px;
+}
+/* Refresher card
 .card {
     margin: 50px auto;
     width: 400px;
     color: #121212;
     border:solid 2px #333333;
-    /* border-bottom:solid 5px #333333; */
     display: flex;
     padding: 20px;
     justify-content: space-around;
@@ -20,7 +81,6 @@
     background: #666666;
     background: -moz-linear-gradient(left, #666666 0%, #868686 50%, #666666 100%);
     background: -webkit-linear-gradient(left, #666666 0%, #868686 50%, #666666 100%);
-    background: linear-gradient(to right, #666666 0%, #868686 50%, #666666 100%);6 50%, #333333 100%);
 }
 
 img {
@@ -31,7 +91,6 @@ img {
 }
 
 .cardInfo {
-    /* border: red solid 1px; */
     color: #fff;
     margin: 0 auto 0 10px;
     width: 100%;
@@ -54,4 +113,4 @@ h3, h4, p {
     font-weight: 300;
     font-size: 1rem;
     text-transform: capitalize;
-}
+}*/
