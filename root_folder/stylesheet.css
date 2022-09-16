@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,700&display=swap');
+
 * {
     margin: 0;
     box-sizing: border-box;
@@ -6,111 +8,352 @@
 }
 
 body {
-    background: #1d1d1d;
+    background: #000;
     color: #d2d2d2;
-
+    background-image: url(/root_folder/assets/amCQz4.jpg);
+    background-repeat: no-repeat;
+    background-position: center; 
 }
 
 p {
     margin: 10px;
 }
+  .underTitle {
+    margin: 0 auto;
+    max-width: 500px;
+    text-align: center;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
 
+  .underTitleSlash {
+    color: #00ffff;
+  }
+
+.flex {
+    display: flex;
+    flex-direction: column;
+}
+ /* Glitch effect from https://codeconvey.com/glitch-text-effect-using-css/ */
+ .small {
+    font-size:1em;
+}
+.medium {
+    font-size:3em;
+    font-weight: 400;
+    letter-spacing:2px;
+}
+.large {
+    font-weight: 700;
+    font-size:5em;
+    letter-spacing:2px;
+}
+
+  .glitch {
+    color: white;
+    position: relative;
+    max-width: 500px;
+    margin: 0 auto;
+    font-family: 'Dosis', sans-serif;
+
+  }
+  .glitch:before {
+    content: attr(data-text);
+    position: absolute;
+    left: -2px;
+    text-shadow: 1px 0 blue;
+    top: 0;
+    color: white;
+    background: #1b1b1b;
+    overflow: hidden;
+    clip: rect(0, 900px, 0, 0);
+    animation: noise-anim-2 3s infinite linear alternate-reverse;
+  }
+  .glitch:after {
+    content: attr(data-text);
+    position: absolute;
+    left: 2px;
+    text-shadow: -1px 0 red;
+    top: 0;
+    color: white;
+    background: #1b1b1b;
+    overflow: hidden;
+    clip: rect(0, 900px, 0, 0);
+    animation: noise-anim 2s infinite linear alternate-reverse;
+  }
+  @keyframes noise-anim {
+    0% {
+      clip: rect(88px, 9999px, 98px, 0);
+    }
+    5% {
+      clip: rect(39px, 9999px, 2px, 0);
+    }
+    10% {
+      clip: rect(11px, 9999px, 17px, 0);
+    }
+    15% {
+      clip: rect(37px, 9999px, 22px, 0);
+    }
+    20% {
+      clip: rect(85px, 9999px, 2px, 0);
+    }
+    25% {
+      clip: rect(45px, 9999px, 15px, 0);
+    }
+    30% {
+      clip: rect(62px, 9999px, 36px, 0);
+    }
+    35% {
+      clip: rect(77px, 9999px, 36px, 0);
+    }
+    40% {
+      clip: rect(79px, 9999px, 81px, 0);
+    }
+    45% {
+      clip: rect(51px, 9999px, 82px, 0);
+    }
+    50% {
+      clip: rect(72px, 9999px, 61px, 0);
+    }
+    55% {
+      clip: rect(49px, 9999px, 68px, 0);
+    }
+    60% {
+      clip: rect(46px, 9999px, 19px, 0);
+    }
+    65% {
+      clip: rect(56px, 9999px, 57px, 0);
+    }
+    70% {
+      clip: rect(19px, 9999px, 81px, 0);
+    }
+    75% {
+      clip: rect(48px, 9999px, 44px, 0);
+    }
+    80% {
+      clip: rect(14px, 9999px, 93px, 0);
+    }
+    85% {
+      clip: rect(24px, 9999px, 48px, 0);
+    }
+    90% {
+      clip: rect(2px, 9999px, 47px, 0);
+    }
+    95% {
+      clip: rect(87px, 9999px, 100px, 0);
+    }
+    100% {
+      clip: rect(50px, 9999px, 59px, 0);
+    }
+  }
+   
+  @keyframes noise-anim-2 {
+    0% {
+      clip: rect(95px, 9999px, 2px, 0);
+    }
+    5% {
+      clip: rect(95px, 9999px, 92px, 0);
+    }
+    10% {
+      clip: rect(19px, 9999px, 86px, 0);
+    }
+    15% {
+      clip: rect(3px, 9999px, 31px, 0);
+    }
+    20% {
+      clip: rect(70px, 9999px, 4px, 0);
+    }
+    25% {
+      clip: rect(29px, 9999px, 55px, 0);
+    }
+    30% {
+      clip: rect(70px, 9999px, 80px, 0);
+    }
+    35% {
+      clip: rect(1px, 9999px, 20px, 0);
+    }
+    40% {
+      clip: rect(48px, 9999px, 52px, 0);
+    }
+    45% {
+      clip: rect(53px, 9999px, 18px, 0);
+    }
+    50% {
+      clip: rect(1px, 9999px, 28px, 0);
+    }
+    55% {
+      clip: rect(40px, 9999px, 54px, 0);
+    }
+    60% {
+      clip: rect(62px, 9999px, 60px, 0);
+    }
+    65% {
+      clip: rect(94px, 9999px, 36px, 0);
+    }
+    70% {
+      clip: rect(79px, 9999px, 16px, 0);
+    }
+    75% {
+      clip: rect(66px, 9999px, 5px, 0);
+    }
+    80% {
+      clip: rect(63px, 9999px, 22px, 0);
+    }
+    85% {
+      clip: rect(36px, 9999px, 57px, 0);
+    }
+    90% {
+      clip: rect(38px, 9999px, 69px, 0);
+    }
+    95% {
+      clip: rect(38px, 9999px, 91px, 0);
+    }
+    100% {
+      clip: rect(18px, 9999px, 48px, 0);
+    }
+  }
 .mainContainer {
     display: flex;
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
     margin-top: 1em;
+  
+}
+.container {
+    background: #1b1b1b;
+    max-width: 700px;
+    -webkit-box-shadow: -2px 3px 0 #0000ff5d, 2px -3px 0 #ff00005d;
+    box-shadow: -2px 3px 0 #0000ff5d, 2px -3px 0 #ff00005d;
 }
 
-.container {
-    background: #3a3a3a;
-    max-width: 700px;
-    border-radius: 5px;
-
+.bannerContainer {
+    position: relative;
+    top: 0;
+    left: 0;
+    min-height: 300px
 }
 .banner {
-    background-image: url('/root_folder/assets/624397.jpg');
+    background-image: url('/root_folder/assets/bg-glitch.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 20px auto
-;
+    height: 210px;
+    position: relative;
+    top: 0;
+    left: 0;
+    /* border-radius: 5px 5px 0 0; */
+
 }
 .pfp {
     border-radius: 50%;
     margin: auto;
     display: block;
+    position: absolute;
+    top: 30px;
+    left: 30%;
+    -webkit-box-shadow: -1px 2px 0 blue, 1px -2px 0 red;
+    box-shadow: -1px 2px 0 blue, 1px -2px 0 red;
+
 }
 .infoContainer {
     text-align: center;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
 }
 .name {
     margin-top: 20px;
-    font-size: 2em;
+    font-size: 2.5em;
     letter-spacing: 0.1em;
+}
+.title {
+    margin: 10px;
+    font-size:1em;
+    font-weight: 700;
 }
 .nameContainer {
     max-width: 200px;
     margin: 0 auto;
 }
-.title {
-    margin: 10px;
-}
+
 .socialMedia a {
     font-size: 1.5em;
     text-decoration: none;
     color: #d2d2d2;
-    background-color: #3a3a3a;
+    background-color: #1b1b1b;
     padding: 15px 10px 15px 10px;
+    transition:  0.2s ease-in-out;
 }
-
+.socialMedia a:hover {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    transition:  0.2s ease-in-out;
+}
 .about {
-    margin-top: 50px;
+    margin: 30px;
+    background: #252525;
+    padding:  10px;
+    border-radius: 5px;
 }
-/* Refresher card
-.card {
-    margin: 50px auto;
-    width: 400px;
-    color: #121212;
-    border:solid 2px #333333;
-    display: flex;
-    padding: 20px;
-    justify-content: space-around;
-    text-align: center;
-    border-radius: 10px;
-    background: #666666;
-    background: -moz-linear-gradient(left, #666666 0%, #868686 50%, #666666 100%);
-    background: -webkit-linear-gradient(left, #666666 0%, #868686 50%, #666666 100%);
-}
-
-img {
-    width: 150px;
-    border-radius: 50%;
-    border-left: blue solid 2px;
-    border-right: red solid 2px;
-}
-
-.cardInfo {
-    color: #fff;
-    margin: 0 auto 0 10px;
-    width: 100%;
-
-}
-
-h3, h4, p {
-    margin: 15px auto;
-}
-
-.name {
-    font-weight: 700;
-    font-size: 1.5rem;
-    margin-bottom: 0;
-    text-transform: capitalize;
-}
-.nickname{
+.discordBtn {
+    max-width: 150px;
+    padding: 10px;
     margin: 0 auto;
-    text-shadow: none;
-    font-weight: 300;
-    font-size: 1rem;
-    text-transform: capitalize;
-}*/
+    cursor: pointer;
+    background: none;
+    color: inherit;
+    border: none;
+    font: inherit;
+    outline: inherit;
+    font-weight: 700;
+    transition: 0.2s ease-in-out;
+
+}
+.discordBtn:hover {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    transition:  0.2s ease-in-out;
+}
+.hidden {
+    display: none;
+}
+.tooltip {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 140px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 150%;
+    left: 50%;
+    margin-left: -75px;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
