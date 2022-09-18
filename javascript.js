@@ -6,5 +6,5 @@ function myFunction() {
   
     navigator.clipboard.writeText(copyText.value);
   
-    alert("Copied: " + copyText.value);
+    alert("Copied " + copyText.value + "to clipboard!");
   } 
